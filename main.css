@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background:rgb(235, 203, 203);
+    width: 100vw;
+    height: 15vh;
+}
+
+.barra_logo{
+    width: 100%;
+    height: 10vh;
+}
+
+.items{
+    border: 1px solid black;
+    width: 100%;
+    height: 5vh;
+    /* El CSS por default establece display:block que hace que cada item ocupe todo el largo de su contenedor padre 
+       Usando display flex, estamos cambiando esto para que vayan uno al lado del otro mientras tengan espacio. Existen subpropiedades para que 
+       podamos manipular los elementos como queremos
+    */
+    /* align-items : se utiliza para alinear verticalmente
+        justify-content : se utiliza para alinear horizontalmente
+        flex-direction : te permite invertir los elementos de estado fila a columna y permite poner los elementos en orden normal o al reves
+    */
+    /* Pagina para practicarlo: flex-frog */
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+.item{
+    list-style:none;
+}
+
+.container_carousel{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_destacados{
+    margin-top: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 40vh;
+}
+
+.container_sedes{
+    margin-top: 2.7vh;
+    margin-bottom: 1.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80vw;
+    height: 75vh;
+}
+
+.sedes{
+    width: 30vw;
+    height: 50vh;
+    background: gray;
+    border: 1px solid black;
+}
+
+.propiedad_destacada{
+    width: 15vw;
+    height: 40vh;
+    background: gray;
+    border: 1px solid black;
+}
+
+.propiedad_destacada img{
+    width: 100%;
+}
+
+.propiedad_destacada p,h3{
+    margin:0 10%;
+}
+
+.propiedad_destacada h3{
+    margin-bottom: 5px;
+}
+
+.footer{
+    background:rgb(235, 203, 203);
+    width: 100vw;
+    height: 20vh;
+    border: 1px solid black;
+    position: relative; 
+}
+
+.container_redes{
+    display: flex;
+    justify-content: space-around;
+    position: absolute; /*normalmente esto toma en cuenta toda la pagina pero gracias a relative no es el caso*/
+    right: 0px;
+    bottom: 10px;
+    height: 50px;
+    width: 200px;
+
+}
+
+.center{
+    justify-content: space-around;
+    position: absolute;
+    top: 0px;
+    left: 40%;
+    transform: translateX(-50%);
+    align-items: center;
+}
