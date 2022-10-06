@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background:rgb(235, 203, 203);
+    width: 100%;
+    height: 15vh;
+}
+
+.barra_logo{
+    width: 100%;
+    height: 10vh;
+}
+
+.items{
+    border: 1px solid black;
+    width: 100%;
+    height: 5vh;
+    /* El CSS por default establece display:block que hace que cada item ocupe todo el largo de su contenedor padre 
+       Usando display flex, estamos cambiando esto para que vayan uno al lado del otro mientras tengan espacio. Existen subpropiedades para que 
+       podamos manipular los elementos como queremos
+    */
+    /* align-items : se utiliza para alinear verticalmente
+        justify-content : se utiliza para alinear horizontalmente
+        flex-direction : te permite invertir los elementos de estado fila a columna y permite poner los elementos en orden normal o al reves
+    */
+    /* Pagina para practicarlo: flex-frog */
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+.item{
+    list-style:none;
+}
+
+.container_carousel{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_destacados{
+    margin-top: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 40vh;
+}
+
+.propiedad_destacada{
+    width: 15vw;
+    height: 40vh;
+    background: gray;
+    border: 1px solid black;
+}
+
+.propiedad_destacada img{
+    width: 100%;
+}
+
+.propiedad_destacada p,h3{
+    margin:0 10%;
+}
+
+.propiedad_destacada h3{
+    margin-bottom: 5px;
+}
+
+
+.footer{
+    background:rgb(235, 203, 203);
+    width: 100%;
+    height: 20vh;
+    border: 1px solid black;
+    position: relative;
+}
+
+.container_redes{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    height: 50px;
+    width: 200px;
+}
+
+/*----------------------------------------- CONTACTO -------------------------------------------*/
+
+.FAQ{
+    width: 100%;
+    background: rgb(233, 212, 212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5vh 0;
+}
+
+.container_dropdown{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dropdown_text{
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    margin:10px 0;
+}
+
+.checkbox_button{
+    width:auto;
+    height: 7.5vh;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(-5%);
+}
+
+.checkbox_button:hover{
+    cursor: pointer;
+}
+
+.checkbox_button img{
+    position: absolute;
+    right: -50px;
+    height: 30px;
+    width: 30px;
+    transition: 0.5s;
+    transform: rotate(-180deg);
+}
+
+#pregunta1,#pregunta2,#pregunta3{
+    display: none;
+}
+
+#pregunta1:checked ~ .dropdown_text, #pregunta2:checked ~ .dropdown_text, #pregunta3:checked ~ .dropdown_text{
+    display: block;
+}
+
+#pregunta1:checked ~ .checkbox_button img,#pregunta2:checked ~ .checkbox_button img,#pregunta3:checked ~ .checkbox_button img{
+    transition: 0.5s;
+    transform: rotate(-0deg);
+}
+
+/*------- Parte Dueños ----------*/
+
+.owners_container{
+    width: 100%;
+    padding:5vh 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.owner_section{
+    padding: 25px 0;
+    width: 25vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.owner_section img{
+    width: 90%;
+}
+
+.owner_section h2{
+    text-align: center;
+    margin: 10px 0;
+    width: 90%;
+}
+
+.owner_section p{
+    text-align: center;
+    margin: 10px 0;
+    width: 90%;
+}
+
+/*------------ FORM ---------------*/
+
+.form_container{
+    background: beige;
+    width: 100%;
+    height: 80vh;
+    padding:5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container h2{
+    padding-bottom: 25px;
+}
+
+.form{
+    font-size: 1.25rem;
+    width: 60%;
+    height: 50vh;
+    border-radius: 15px;
+    box-shadow: 1px 3px 55px 5px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_columns-container{
+    display: flex;
+    width: 100%;
+}
+
+.form_column{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%; /* SOLO PARA CENTRAR TEMPORANEAMENTE */
+    width: 50%;
+}
+
+.form_column label{
+    margin-bottom:2px;
+}
+
+.form_column input,.form_column select{
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.form_message{
+    display: flex;
+    flex-direction: column;
+    width: 77.5%;
+}
+
+.form_message textarea{
+    resize: none;
+}
+
+.form_button{
+    width: 100px;
+}
+
+/* ------------------------------- FIN CONTACTO ------------------------------------*/
+
+/* --------------------------- INICIO PROPIEDADES ----------------------------------*/
+
+.container_propiedades{
+    width: 100%;
+    display: flex;
+}
+
+.container_categorias{
+    width: 15%;
+    height: 100vh;
+    background:rgb(206, 182, 182);
+}
+
+.propiedades{
+    margin:5vh 2.5%;
+    width: 80vw;
+    background:rgb(245, 245, 201);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.propiedad{
+    margin: 25px 1.5vw;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* ----------------------------- FIN PROPIEDADES -----------------------------------*/
