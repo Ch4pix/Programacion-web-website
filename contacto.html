@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Contacto / FAQ</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="barra_logo">
+                <img src="images/casa_logo.png" alt=""
+                width="75"
+                height="75">
+            </div>
+            <ul class="items">
+                <li class="item">Item 1</li>
+                <li class="item">Item 2</li>
+                <li class="item">Item 3</li>
+                <li class="item">Item 4</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="FAQ">
+            <div class="container_dropdown">
+                <input type="checkbox" id="pregunta1">
+                <label for="pregunta1" class="checkbox_button">¿Lorem ipsum dolor sit amet? <img src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></label>
+                <p class="dropdown_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="container_dropdown">
+                <input type="checkbox" id="pregunta2">
+                <label for="pregunta2" class="checkbox_button">¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, asperiores!? <img src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></label>
+                <p class="dropdown_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, repellat?</p>
+            </div>
+            <div class="container_dropdown">
+                <input type="checkbox" id="pregunta3">
+                <label for="pregunta3" class="checkbox_button">¿Lorem ipsum dolor, sit amet consectetur adipisicing elit? <img src="https://cdn-icons-png.flaticon.com/512/159/159119.png" alt=""></label>
+                <p class="dropdown_text">Lorem ipsum dolor sit amet consectetur natus, repellat?</p>
+            </div>
+        </div>
+        <div class="owners_container">
+            <div class="owner_section">
+                <img src="https://via.placeholder.com/300" alt="">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, voluptatum.</p>
+            </div>
+            <div class="owner_section">
+                <img src="https://via.placeholder.com/300" alt="">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, voluptatum.</p>
+            </div>
+            <div class="owner_section">
+                <img src="https://via.placeholder.com/300" alt="">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, voluptatum.</p>
+            </div>
+        </div>
+        <div class="form_container">
+            <h2>Si te quedo alguna duda o deseas contactarnos</h2>
+            <form action="" class="form" id="contact_form">
+                <div class="form_columns-container">
+                    <div class="form_column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="genero">Genero</label>
+                        <select name="Genero" id="genero" form="contact_form">
+                            <option value=""></option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form_column">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                        <label for="telefono">Numero Telefonico</label>
+                        <input type="tel" id="telefono">
+                        <label for="documento">Documento</label>
+                        <input type="text" id="documento">
+                    </div>
+                </div>
+                <div class="form_message">
+                    <label for="mensaje">Escriba su mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+                    <div class="form_message-buttons">
+                        <input type="submit" id="enviar" class="form_button" id="submit">
+                        <input type=reset value="Borrar datos" class="form_button" id="reset">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <h><b>Ayuda tecnica:</b></h>
+        <p>12340-placeholder</p>
+
+        <div class="center">
+            <h><b><u>Dueños</u></b></h>
+            <p>Nestor Fede</p>
+            <p>100% personaReal</p>
+            <p>Esto no es un placeholder</p>
+        </div>
+
+        <div class="container_redes">
+            <img src="images/facebook_logo.png" alt="logo facebook">
+            <img src="images/instagram_logo.png" alt="logo insta">
+            <img src="images/gmail_logo.png" alt="logo gmail">
+        </div>
+    </footer>
+</body>
+</html>
