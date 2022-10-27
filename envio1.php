@@ -65,7 +65,8 @@ $header .= "Content-Type: text/plain";
 $para = "infogrupo01@localhost";
 // fede1234
 $asunto = "Contacto en sitio grupo 01";
-$mensaje = "Nombre: ".$nombre."\nApellido: ".$apellido."\nDocumento: ".$documento."\nTelefono: ".$telefono."\nE-mail: ".$email."\nGenero: ".$genero."\nComentario: ".$comentario;
+$mensaje = "Nombre: ".$nombre."\nApellido: ".$apellido."\nDocumento: ".$documento."\nTelefono: ".$telefono."\nE-mail: ".$email."\nGenero: ".$genero."\n
+Comentario: ".$comentario;
 
 //
 // cuando esta funcionado sacamos los echo o les ponemos //
