@@ -62,15 +62,15 @@
         </div>
         <div class="form_container">
             <h2>Si te quedo alguna duda o deseas contactarnos</h2>
-            <form action="" class="form" id="contact_form">
+            <form action="envio1.php" method="post" class="form" id="contact_form">
                 <div class="form_columns-container">
                     <div class="form_column">
                         <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre">
+                        <input type="text" id="nombre" name="nombre">
                         <label for="email">Email</label>
-                        <input type="email" id="email">
+                        <input type="email" id="email" name="email">
                         <label for="genero">Genero</label>
-                        <select name="Genero" id="genero" form="contact_form">
+                        <select name="genero" id="genero" form="contact_form">
                             <option value=""></option>
                             <option value="masculino">Masculino</option>
                             <option value="femenino">Femenino</option>
@@ -79,16 +79,16 @@
                     </div>
                     <div class="form_column">
                         <label for="apellido">Apellido</label>
-                        <input type="text" id="apellido">
+                        <input type="text" id="apellido" name="apellido">
                         <label for="telefono">Numero Telefonico</label>
-                        <input type="tel" id="telefono">
+                        <input type="tel" id="telefono" name="telefono">
                         <label for="documento">Documento</label>
-                        <input type="text" id="documento">
+                        <input type="text" id="documento" name="documento">
                     </div>
                 </div>
                 <div class="form_message">
                     <label for="mensaje">Escriba su mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="7"></textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="7" name="comentario"></textarea>
                     <div class="form_message-buttons">
                         <input type="submit" id="enviar" class="form_button" id="submit">
                         <input type=reset value="Borrar datos" class="form_button" id="reset">
