@@ -62,7 +62,7 @@
         </div>
         <div class="form_container">
             <h2>Si te quedo alguna duda o deseas contactarnos</h2>
-            <form action="envio1.php" method="post" class="form" id="contact_form">
+            <form method="post" class="form" id="contact_form">
                 <div class="form_columns-container">
                     <div class="form_column">
                         <label for="nombre">Nombre</label>
@@ -95,6 +95,39 @@
                     </div>
                 </div>
             </form>
+
+            <?php
+
+$nombre     =  $_POST['nombre'];
+$apellido  =  $_POST['apellido'];
+$documento  =  $_POST['documento'];
+$email   =  $_POST['email'];
+$telefono =  $_POST['telefono'];
+$genero =  $_POST['genero'];
+$comentario =  $_POST['comentario'];
+
+echo $nombre;
+echo $apellido; 
+echo $documento;
+echo $email;
+echo $telefono;
+echo $genero;
+
+$header = 'From: ' . $email . " \r\n"; 
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n"; 
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain"; 
+
+$para = "infogrupo01@localhost";
+// fede1234
+$asunto = "Contacto en sitio grupo 01";
+$mensaje = "Nombre: ".$nombre."\nApellido: ".$apellido."\nDocumento: ".$documento."\nTelefono: ".$telefono."\nE-mail: ".$email."\nGenero: ".$genero."\n
+Comentario: ".$comentario;
+
+mail($para,$asunto,$mensaje,$header);
+
+?>
+
         </div>
     </main>
     <footer class="footer">
