@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .navbar{
@@ -19,24 +21,20 @@
     width: 100%;
     height: 10vh;
     background:#FF8787;
+    position: relative;
+}
+
+.barra_logo img{
+    position: absolute;
+    height: 100%;
 }
 
 .items{
     background:#E26868;
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
     width: 100%;
     height: 5vh;
-    /* El CSS por default establece display:block que hace que cada item ocupe todo el largo de su contenedor padre 
-    Usando display flex, estamos cambiando esto para que vayan uno al lado del otro mientras tengan espacio. Existen subpropiedades para que 
-    podamos manipular los elementos como queremos
-    */
-    /* align-items : se utiliza para alinear verticalmente
-        justify-content : se utiliza para alinear horizontalmente
-        flex-direction : te permite invertir los elementos de estado fila a columna y permite poner los elementos en orden normal o al reves
-    */
-    /* Pagina para practicarlo: flex-frog */
     display: flex;
     align-items: center; 
     justify-content: space-around; 
@@ -57,41 +55,98 @@
     color: black;
 }
 
+/*-------- CAROUSEL ------------*/
+
 .container_carousel{
-    margin-top: 20vh;
+    margin: 15vh 0 100px 0;
     width: 100%;
-    height: 65vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.096);
 }
 
+.espacio_imagenes_carousel{
+    width: 60%;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    border-radius: 5px;
+}
+
+.espacio_imagenes_carousel div{
+    scroll-snap-align: start;
+    height: 500px;
+    width: 1000px;
+}
+
+.espacio_imagenes_carousel div a img{
+    height: 500px;
+    width: 1000px;
+    object-fit:cover;
+}
+
+/*-------- CAROUSEL ------------*/
+
 .container_destacados{
-    margin-top: 2.5vh;
+    margin: 2.5vh 7.5% 100px 7.5%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 85%;
     height: 40vh;
 }
 
 .propiedad_destacada{
-    width: 15vw;
-    height: 40vh;
-    background: gray;
-    border: 1px solid black;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.propiedad_destacada:hover{
+    cursor: pointer;
 }
 
 .propiedad_destacada img{
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
     width: 100%;
+    height: 200px;
+    transition: 0.5s ease;
+}
+
+.propiedad_destacada div{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+
+.propiedad_destacada img:hover{
+    scale: 1.05;
 }
 
 .propiedad_destacada p,h3{
-    margin:0 10%;
+    margin:0 20px;
+}
+
+.propiedad_destacada p{
+    color: rgb(151, 150, 150);
+    font-weight: 300;
+    margin-top: 15px;
 }
 
 .propiedad_destacada h3{
+    margin-top: 25px;
     margin-bottom: 5px;
+    font-weight: 700;
 }
 /* Santino */
 .container_sedes{
@@ -124,18 +179,17 @@
     justify-content: space-around;
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 0px;
     height: 50px;
     width: 200px;
+    margin: 0 40%;
 }
-.center{
-    justify-content: space-around;
-    position: absolute;
-    top: 0px;
-    left: 40%;
-    transform: translateX(-50%);
-    align-items: center;
+
+.container_redes img{
+    height: 50px;
+    aspect-ratio: 1;
 }
+
 /*----------------------------------------- CONTACTO -------------------------------------------*/
 
 .FAQ{

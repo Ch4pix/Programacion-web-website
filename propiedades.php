@@ -12,15 +12,13 @@
         <nav class="navbar">
 
             <div class="barra_logo">
-                <a href="index.html"><img src="images/casa_logo.png" alt="logo de pagina"
-                width="75"
-                height="75"></a>
+                <a href="index.html"><img src="images/logo.png" alt="logo de pagina"></a>
             </div>
 
             <ul class="items">
                 <li class="item"> <a href="index.html">Home</a> </li>
                 <li class="item"> <a href="sedes.html">Sedes </a></li>
-                <li class="item"> <a href="propiedades.html">Propiedades</a></li>
+                <li class="item"> <a href="propiedades.php">Propiedades</a></li>
                 <li class="item"> <a href="contacto.html">Contactanos </a></li>
             </ul>
         </nav>
@@ -42,6 +40,21 @@
                 </ul>
             </div>
             <div class="propiedades">
+                <?php 
+                    // $host = "localhost";
+                    // $user = "root";
+                    // $password= "";
+                    // $db = "prueba";
+                    // $connect = mysqli_connect($host,$user,$password,$db);
+                    // if($connect->connect_error){
+                    //     die("Hubo un problema al redireccionar.");
+                    // }
+                    // $sql = "SELECT * from propiedades where categoria = 'Departamento'";
+                    // $resultado = mysqli_query($connect,$sql);
+                    // $datos= $resultado -> fetch_assoc()                    
+                ?>
+
+
                 <div class="propiedad"></div>
                 <div class="propiedad"></div>
                 <div class="propiedad"></div>
