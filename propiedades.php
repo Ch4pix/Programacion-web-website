@@ -71,20 +71,35 @@
         </div>
     </main>
     <footer class="footer">
-        <h><b>Ayuda tecnica:</b></h>
-        <p>12340-placeholder</p>
-
-        <div class="center">
-            <h><b><u>Dueños</u></b></h>
-            <p>Nestor Fede</p>
-            <p>100% personaReal</p>
-            <p>Esto no es un placeholder</p>
+        <div class="footer_info">
+            <div>
+                <ul>
+                    <li>Ayuda técnica</li>
+                    <li>+54 9 11 3952 3915</li>
+                    <li>inmobiliarias@ssf.edu.ar</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Dueños</li>
+                    <li>Federico Garcia</li>
+                    <li>Santino Capellari</li>
+                    <li>Salvador Urueña</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Sedes</li>
+                    <li>Panama</li>
+                    <li>Transylvania</li>
+                    <li>Costa negra</li>
+                </ul>
+            </div>    
         </div>
-
         <div class="container_redes">
-            <img src="images/facebook_logo.png" alt="logo facebook">
-            <img src="images/instagram_logo.png" alt="logo insta">
-            <img src="images/gmail_logo.png" alt="logo gmail">
+            <img src="images/instagram_logo.png" id="instagram_logo" alt="">
+            <img src="images/whatsapp-logo.png" id="whatsapp_logo" alt="">
+            <img src="images/facebook_logo.png" id="facebook_logo" alt="">
         </div>
     </footer>
 </body>

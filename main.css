@@ -37,11 +37,12 @@
     height: 5vh;
     display: flex;
     align-items: center; 
-    justify-content: space-around; 
+    justify-content: center; 
 }
 
 .item{
     list-style:none;
+    margin: 0 120px;
 }
 
 .item a{
@@ -154,38 +155,99 @@
     margin-bottom: 1.5vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100vw;
     height: 60vh;
 }
 
 .sedes{
-    list-style: none;
-    height: 400px;
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 25%;
+    margin: 0 50px;
+    box-shadow: 0px 10px 15px -3px rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+.sedes h1{
+    margin-bottom: 20px;
+}
+
+.sedes iframe{
+    margin-bottom: 20px;
+}
+
+.sedes p{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 
 .footer{
     background:#FF8787;
     width: 100%;
-    height: 20vh;
-    border: 1px solid black;
+    height: 200px;
     position: relative;
+}
+
+.footer_info{
+    height: 150px;
+    width: 80%;
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+}
+
+.footer_info div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_info ul li{
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.footer_info ul li:nth-child(1){
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .container_redes{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position: absolute;
-    right: 0;
-    bottom: 0px;
-    height: 50px;
+    bottom: 15px;
+    right: 15px;
     width: 200px;
-    margin: 0 40%;
+    height: 50px;
 }
 
 .container_redes img{
+    transition: 0.5s;
+}
+
+.container_redes img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+#whatsapp_logo{
+    height: 50px;
+    aspect-ratio: 1;
+}
+
+#instagram_logo{
+    height: 50px;
+    aspect-ratio: 1;
+}
+
+#facebook_logo{
     height: 50px;
     aspect-ratio: 1;
 }
