@@ -194,8 +194,8 @@
 
 .footer_info{
     height: 150px;
-    width: 80%;
-    margin: 0 10%;
+    width: 75%;
+    margin: 0 12.5% 0 7.5%;
     display: grid;
     grid-template-columns: repeat(3,33%);
 }
@@ -341,14 +341,15 @@
 
 .owner_section h2{
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
     width: 90%;
 }
 
 .owner_section p{
     text-align: center;
-    margin: 10px 0;
+    margin-top: 5px;
     width: 90%;
+    font-size: 20px;
 }
 
 /*------------ FORM ---------------*/
@@ -422,28 +423,107 @@
     margin-top: 20vh;
     width: 100%;
     display: flex;
-    background:#EDEDED;
 }
 
 .container_categorias{
     width: 15%;
-    background:#dfdfdb;
+    box-shadow: 11px 0px 15px -3px rgba(0,0,0,0.05);
+}
+
+.container_categorias .filtros{
+    position: fixed;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_categorias .filtros h2,h3,ul{
+    margin-left: 15px;
+}
+
+.container_categorias .filtros ul{
+    padding-left: 0px;
+}
+
+.container_categorias .filtros ul li{
+    margin-top: 10px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.divisor_categoria{
+    height: 1px;
+    width: 100%;
+    margin: 15px 0;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 .propiedades{
-    margin:5vh 2.5%;
+    margin:0 2.5% 100px 2.5%;
     width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.propiedades h2{
+    margin: 30px 0;
+}
+
+.propiedades_seccion{
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .propiedad{
-    margin: 25px 1.5vw;
-    width: 250px;
-    height: 250px;
-    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    margin: 5px 5px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.propiedad div{
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.propiedad div img{
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    width: 300px;
+    height: 150px;
+    transition: 0.5s ease;
+}
+
+.propiedad div img:hover{
+    scale: 1.05;
+}
+
+.propiedad .text{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.propiedad .text p{
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    font-weight: 500;
+}
+
+.propiedad .text img{
+    position: absolute;
+    margin-left: 10%;
+    width: 30px;
+    height: 25px;
 }
 
 /* ----------------------------- FIN PROPIEDADES -----------------------------------*/
